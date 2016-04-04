@@ -23,28 +23,34 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
-    
-    
-    
-  	<header>
-  
-  	</header>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slideout/0.1.11/slideout.min.js"></script>
   	
-  	<nav class="menu">
-  		
-  		<ul>
-  			<li><a href="#">Home</a></li>
-  			<li><a href="#">Download the App</a></li>
-  			<li><a href="#">Sign Up</a></li>
-  			<li><a href="#">Log In</a></li>
-  			<li><a href="#">Discover</a></li>
-  			<li><a href="#">Search</a></li>
-  			<li><a href="#">How it Works</a></li>
-  			<li><a href="#">Help</a></li>
-  		</ul>
-  	</nav>
-		
-		
-   
+  	<nav id="menu">
+  		<header>
+  			<h2>Menu</h2>
+  		</header>
+		</nav>
+ 		
+ 		<main id="panel">
+ 			<header>
+ 				<button class="js-slideout-toggle">
+ 					Open Slideout
+ 				</button>
+ 			</header>
+ 		</main>
+ 		
+ 		<script src="dist/slideout.min.js"></script>
+    <script>
+      var slideout = new Slideout({
+        'panel': document.getElementById('panel'),
+        'menu': document.getElementById('menu'),
+        'padding': 256,
+        'tolerance': 70
+      });
+			
+			document.querySelector('#panel button').addEventListener('click', function() {
+  slideout.toggle();
+});
+    </script>
   </body>
 </html>
