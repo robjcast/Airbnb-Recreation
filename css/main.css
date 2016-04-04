@@ -52,29 +52,3 @@ nav a:hover {
 
 /**--------------------------**/
 
-.menu {
-	width: 240px;
-	height: 100%;
-	position: absolute;
-	background-color: #F3F;
-	left: -240px;
-	transition: all .3s ease-in-out;
-	-webkit-transition: all .3s ease-in-out;
-	-moz-transition: all .3s ease-in-out;
-	-ms-transition: all .3s ease-in-out;
-	-o-transition: all .3s ease-in-out;
-}
-
-.menu_icon {
-	padding: 10px 20px;
-	cursor: pointer;
-}
-
-#menu_toggle {
-	display: none;
-}
-
-#menu_toggle:checked ~ .menu {
-	position: absolute;
-	left: 0;
-}
