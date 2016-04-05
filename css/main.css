@@ -9,6 +9,15 @@ body {
   height: 100%;
 }
 
+#airbnb {
+	margin-left: 37%;
+}
+
+#hamburger {
+	padding-left: 10px;
+}
+
+
 .slideout-menu {
   position: fixed;
   left: 0;
@@ -20,6 +29,11 @@ body {
   overflow-y: auto;
   -webkit-overflow-scrolling: touch;
   display: none;
+	background-image: url("images/slideout_bg.png");
+}
+
+.slideout-menu ul {
+	text-align: left;
 }
 
 .slideout-panel {
